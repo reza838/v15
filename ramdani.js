@@ -2331,6 +2331,32 @@ if (isBanned) return freply(mess.banned)
 Ramdani.sendMessage(from, hentaimenu(prefix), MessageType.text, {quoted: troli})
 break                                                                
 //------------------< asupan menu >------------------  
+case 'asupan1':
+              if (!isRegist) return freply(mess.regist)
+              if (isDewasa) return freply(mess.dewasa)
+              if (isBanned) return freply(mess.banned)
+			Ramdani.updatePresence(from, Presence.composing) 
+				freply(mess.wait)
+				data = fs.readFileSync('./lib/asupan.js');
+				jsonData = JSON.parse(data);
+				randIndex = Math.floor(Math.random() * jsonData.length);
+				randKey = jsonData[randIndex];
+				asupan = await getBuffer(randKey.result)
+				Ramdani.sendMessage(from, asupan, video, {quoted: mek, caption: '```ASUPAN NIH:V```'})
+				break        
+case 'asupan2':
+              if (!isRegist) return freply(mess.regist)
+              if (isDewasa) return freply(mess.dewasa)
+              if (isBanned) return freply(mess.banned)
+			Ramdani.updatePresence(from, Presence.composing) 
+				freply(mess.wait)
+				data = fs.readFileSync('./lib/asupan2.js');
+				jsonData = JSON.parse(data);
+				randIndex = Math.floor(Math.random() * jsonData.length);
+				randKey = jsonData[randIndex];
+				asupan = await getBuffer(randKey.result)
+				Ramdani.sendMessage(from, asupan, video, {quoted: mek, caption: '```ASUPAN NIH:V```'})
+				break 
               case 'ukhty':
               if (!isRegist) return freply(mess.regist)              
               if (isBanned) return freply(mess.banned)              
@@ -3493,6 +3519,7 @@ case 'art':
                 case 'animebellybutton':
                 case 'hentai4everyone':
                 if (!isRegist) return freply(mess.regist)
+                if (!isDewasa) return freply(mess.dewasa)
                 if (isBanned) return freply(mess.banned)
                 freply(mess.wait)
                 await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=${lolhumanapi}`).then((gambar) => {
@@ -3550,8 +3577,9 @@ case 'art':
                 break
 //HENTAI MENU
        case 'nhentaipdf':
-              if (!isRegist) return freply(mess.regist)
-              if (isBanned) return freply(mess.banned)
+             if (!isRegist) return freply(mess.regist)
+             if (!isDewasa) return freply(mess.dewasa)
+             if (isBanned) return freply(mess.banned)
              if (!isPremium) return freply(mess.only.premium)
              if (args.length == 0) return freply(`Usage: ${prefix + command} query\nExample: ${prefix + command} 317986`)
              if (isNaN(Number(args[0]))) return await freply(mess.wrongFormat)
@@ -3573,6 +3601,7 @@ case 'art':
              break
        case 'nhentai':
               if (!isRegist) return freply(mess.regist)
+              if (!isDewasa) return freply(mess.dewasa)
               if (isBanned) return freply(mess.banned)
               if (!isPremium) return freply(mess.only.premium)
               if (args.length == 0) return freply(`Example: ${prefix + command} 344253`)
@@ -3598,6 +3627,7 @@ case 'art':
        case 'manga':
               if (!isRegist) return freply(mess.regist)
               if (isBanned) return freply(mess.banned)
+              if (!isDewasa) return freply(mess.dewasa)
               if (args.length == 0) return freply(`Example: ${prefix + command} Gotoubun No Hanayome`)
               freply(mess.wait)
               query = args.join(" ")
@@ -3748,6 +3778,7 @@ case 'art':
               break
        case 'nekopoi':
               if (!isRegist) return freply(mess.regist)
+              if (!isDewasa) return freply(mess.dewasa)
               if (isBanned) return freply(mess.banned)
               if (args.length == 0) return freply(`Example: ${prefix + command} https://nekopoi.care/isekai-harem-monogatari-episode-4-subtitle-indonesia/`)
               ini_url = args[0]
@@ -3771,6 +3802,7 @@ case 'art':
               break
        case 'nekopoisearch':
               if (!isRegist) return freply(mess.regist)
+              if (!isDewasa) return freply(mess.dewasa)
               if (isBanned) return freply(mess.banned)
               if (args.length == 0) return freply(`Example: ${prefix + command} Isekai Harem`)
               query = args.join(" ")
@@ -3789,6 +3821,9 @@ case 'art':
        case 'sagiri':
        case 'megumin':
        case 'wallnime':
+       if (!isRegist) return freply(mess.regist)
+       if (!isDewasa) return freply(mess.dewasa)
+       if (isBanned) return freply(mess.banned)
               reply(mess.wait)
               getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=${lolhumanapi}`).then((gambar) => {
               Ramdani.sendMessage(from, gambar, image, { quoted: mek, thumbnail: Buffer.alloc(0) })
@@ -3796,6 +3831,9 @@ case 'art':
               break
        
        case 'hentai':
+       if (!isRegist) return freply(mess.regist)
+       if (!isDewasa) return freply(mess.dewasa)
+       if (isBanned) return freply(mess.banned)
               getBuffer(`http://hadi-api.herokuapp.com/api/hentai`).then((gambar) => {
               Ramdani.sendMessage(from, gambar, image, { quoted: mek })
 }) 
@@ -3812,6 +3850,7 @@ case 'art':
        case '3dnekopoi':
        case '3dnekopoilast':
               if (!isRegist) return freply(mess.regist)
+              if (!isDewasa) return freply(mess.dewasa)
               if (isBanned) return freply(mess.banned)
               freply(mess.wait)
               try {
@@ -3830,6 +3869,7 @@ case 'art':
         case 'nekopoijav':
         case 'javnekopoi':
               if (!isRegist) return freply(mess.regist)
+              if (!isDewasa) return freply(mess.dewasa)
               if (isBanned) return freply(mess.banned)
                freply(mess.wait)
                try {
@@ -3847,6 +3887,7 @@ case 'art':
         case 'nekopoicosplay':
         case 'cosplaynekopoi':
               if (!isRegist) return freply(mess.regist)
+              if (!isDewasa) return freply(mess.dewasa)
               if (isBanned) return freply(mess.banned)
                try {
                freply(mess.wait)
@@ -4753,6 +4794,7 @@ break
               if (!isRegist) return freply(mess.regist)
               if (isDewasa) return freply(mess.dewasa)
               if (isBanned) return freply(mess.banned)
+              if (!isPremium) return freply(mess.premium)
               bokep = body.slice(1)
               const bo =['https://www.mediafire.com/download/8hnhjcf3pseubgy','https://www.mediafire.com/download/cty9phda3d1s62u','https://www.mediafire.com/download/8hnhjcf3pseubgy']
               const kep = bo[Math.floor(Math.random() * bo.length)]
@@ -4762,6 +4804,7 @@ break
               if (!isRegist) return freply(mess.regist)
               if (isDewasa) return freply(mess.dewasa)
               if (isBanned) return freply(mess.banned)
+              if (!isPremium) return freply(mess.premium)
                     if (args.length == 0) return freply(`Contoh: ${prefix + command} https://www.xnxx.com/video-uy5a73b/mom_is_horny_-_brooklyn`)
                     query = args.join(" ")
                     get_result = await fetchJson(`http://api.lolhuman.xyz/api/xnxx?apikey=genbotkey&url=${query}`)
@@ -4783,14 +4826,33 @@ break
                     thumbnail = await getBuffer(get_result.thumbnail)
                     Ramdani.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
                     break
-//18+ MENU
+case 'xnxxsearch':
+              if (!isRegist) return freply(mess.regist)
+              if (isDewasa) return freply(mess.dewasa)
+              if (isBanned) return freply(mess.banned)
+              if (!isPremum) return freply(mess.premium)
+              if (args.length == 0) return freply(`Example: ${prefix + command} Japanese`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=genbotkey&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = ""
+                    for (var x of get_result) {
+                        ini_txt += `Title : ${x.title}\n`
+                        ini_txt += `Views : ${x.views}\n`
+                        ini_txt += `Duration : ${x.duration}\n`
+                        ini_txt += `Uploader : ${x.uploader}\n`
+                        ini_txt += `Link : ${x.link}\n`
+                        ini_txt += `Thumbnail : ${x.thumbnail}\n\n`
+                    }
+                    freply(ini_txt)
+                    break
 case 'bokep':
-case 'xnxx':
 case '4everproxy':
 case 'vpn':
 if (!isRegist) return freply(mess.regist)
 if (!isDewasa) return freply(mess.dewasa)
 if (isBanned) return freply(mess.banned)
+if (!isPremium) return freply(mess.premium)
 freply(`*TOBAT TOLOL, BOKEP MULU PIKIRAN LU,*`)
 break
 //KODE MENU
@@ -4829,51 +4891,6 @@ break
 						})
 					})
 					break
-        case 'xnxxsearch':
-              if (!isRegist) return freply(mess.regist)
-              if (isDewasa) return freply(mess.dewasa)
-              if (isBanned) return freply(mess.banned)
-                    if (args.length == 0) return freply(`Example: ${prefix + command} Japanese`)
-                    query = args.join(" ")
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=genbotkey&query=${query}`)
-                    get_result = get_result.result
-                    ini_txt = ""
-                    for (var x of get_result) {
-                        ini_txt += `Title : ${x.title}\n`
-                        ini_txt += `Views : ${x.views}\n`
-                        ini_txt += `Duration : ${x.duration}\n`
-                        ini_txt += `Uploader : ${x.uploader}\n`
-                        ini_txt += `Link : ${x.link}\n`
-                        ini_txt += `Thumbnail : ${x.thumbnail}\n\n`
-                    }
-                    freply(ini_txt)
-                    break 
-case 'asupan1':
-              if (!isRegist) return freply(mess.regist)
-              if (isDewasa) return freply(mess.dewasa)
-              if (isBanned) return freply(mess.banned)
-			Ramdani.updatePresence(from, Presence.composing) 
-				freply(mess.wait)
-				data = fs.readFileSync('./lib/asupan.js');
-				jsonData = JSON.parse(data);
-				randIndex = Math.floor(Math.random() * jsonData.length);
-				randKey = jsonData[randIndex];
-				asupan = await getBuffer(randKey.result)
-				Ramdani.sendMessage(from, asupan, video, {quoted: mek, caption: '```ASUPAN NIH:V```'})
-				break        
-case 'asupan2':
-              if (!isRegist) return freply(mess.regist)
-              if (isDewasa) return freply(mess.dewasa)
-              if (isBanned) return freply(mess.banned)
-			Ramdani.updatePresence(from, Presence.composing) 
-				freply(mess.wait)
-				data = fs.readFileSync('./lib/asupan2.js');
-				jsonData = JSON.parse(data);
-				randIndex = Math.floor(Math.random() * jsonData.length);
-				randKey = jsonData[randIndex];
-				asupan = await getBuffer(randKey.result)
-				Ramdani.sendMessage(from, asupan, video, {quoted: mek, caption: '```ASUPAN NIH:V```'})
-				break 				                                 
 //------------------<WAR MENU>---------------    
  case 'pvp':
 if (!isRegist) return freply(mess.regist)
