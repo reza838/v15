@@ -1,35 +1,3 @@
-<p align="center">
-<img src="https://telegra.ph/file/a61c2c3d5ea2147ff990e.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
-</p>
-
-</p>
-<p align="center">
-<a href="#"><img title="RAMDANI BOTZ VERSI 17.0.0" src="https://img.shields.io/badge/Ramdani Botz Versi 17.0.0-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
-</p>
-<p align="center">
-<a href="https://github.com/Ramdaniofficial"><img title="Author" src="https://img.shields.io/badge/Author-Ramdani Official-red.svg?style=for-the-badge&logo=github"></a>
-<a href="https://github.com/RamdaniOfficial/v17"><img title="Recode" src="https://img.shields.io/badge/Recode-Ramdani Official-red.svg?style=for-the-badge&logo=github"></a>
-</p>
-<p align="center">
-<a href="https://github.com/Ramdaniofficial/followers"><img title="Followers" src="https://img.shields.io/github/followers/Ramdani Official?color=red&style=flat-square"></a>
-<a href="https://github.com/Ramdaniofficial/v17/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Ramdani Official/v17?color=blue&style=flat-square"></a>
-<a href="https://github.com/Ramdaniofficial/v17/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Ramdani Official/v17?color=red&style=flat-square"></a>
-<a href="https://github.com/Ramdaniofficial/v17/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Ramdani Official/v17?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://github.com/Ramdaniofficial/v17"><img title="Open Source" src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
-<a href="https://github.com/Ramdaniofficial/v17/"><img title="Size" src="https://img.shields.io/github/repo-size/Ramdani Official/v17?style=flat-square&color=green"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FRamdani Official%2Fv17&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
-<a href="https://github.com/Ramdaniofficial/v17/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
-</p>
-
-<p align="center">
-  <a href="https://github.com/Ramdaniofficial/v17#requirements">Requirements</a> •
-  <a href="https://github.com/Ramdaniofficial/v17#instalasi">Installation</a> •
-  <a href="https://github.com/Ramdaniofficial/v17#thanks-to">Thanks to</a> •
-  <a href="https://github.com/Ramdaniofficial/v17#Official-Group"> Official Group Bot</a> •
-  <a href="https://github.com/Ramdaniofficial/v17#donate">Donate</a>
-</p>
-</div>
-
 
 ---
 
@@ -105,15 +73,7 @@ https://github.com/Ramdaniofficial/heroku-buildpack-webp-binaries.git
 Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was saved`.
 * Sekarang setelah Anda menginstal FFmpeg, verifikasi bahwa itu berhasil dengan menjalankan perintah ini untuk melihat versi:
 ```cmd
-> ffmpeg -version
-```
-
-## Donate
-- [Saweria](https://saweria.co/Ramdaniofficial)
-- [Linktree](https://linktr.ee/Ramdaniofficial)
-- [Dana](089512545999)
-- [Ovo](089512545999)
-- [Gopay](089512545999)
+> ffmpeg -vers)
 
 # Official Group
 - [Group 1](https://chat.whatsapp.com/Gq71DUTFOhRE9efPYyobYu)
@@ -123,20 +83,3 @@ Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was sa
 - [Group tes bot](https://chat.whatsapp.com/L8ucMoUQUTt3gKzSvpttbU)
 - [Group murid bot](https://chat.whatsapp.com/IyNVUbMxyoSG0Sw0oe6T62)
 - [Group saling subscribe](https://chat.whatsapp.com/Dx8VCkqvDSRD5yXXxQ3LK3)
-
-
-# Thanks to
-<a href="https://github.com/Ramdaniofficial"><img src="https://github.com/Ramdaniofficial.png?size=100" width="100" height="100"></a> | [![NURUTOMO](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) 
----|---
-[Ramdani Official](https://github.com/Ramdaniofficial)  | [Nurutomo](https://github.com/Nurutomo)
-Developer Ramdani bot v17 | Constributor |
-<a href="https://github.com/MhankBarBar"><img src="https://github.com/MhankBarBar.png?size=100" width="100" height="100"></a> | [![FATIH](https://github.com/fatiharridho.png?size=100)](https://github.com/fatiharridho) 
-[Mhankbarbar](https://github.com/MhankBarBar)  | [Fatih A.](https://github.com/fatiharridho)
-Constributor | For Help |
-<a href="https://github.com/FERDIZ-afk"><img src="https://github.com/FERDIZ-afk.png?size=100" width="100" height="100"></a> | [![RASHID](http://github.com/rashidsiregar28.png?size=100)](http://github.com/rashidsiregar28) 
-[Ferdiz](https://github.com/FERDIZ-afk)  | [Rashid](https://github.com/rashidsiregar28)
-For Help | Owner Chikabot |
-<a href="https://github.com/adiwajshing"><img src="https://github.com/adiwajshing.png?size=100" width="100" height="100"></a> | [![FAJAR](http://github.com/Ramdani Official.png?size=100)](http://github.com/Ramdani Official) 
-[Adiwajshing](https://github.com/adiwajshing) | [Ramdani Official](https://Ramdani Official.github.io)
-Owner of Baileys | Owner of Api Ramdani Botz |
-
