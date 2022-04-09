@@ -1,17 +1,8 @@
 
----
-
-## Information
-## bahasa Indonesia
-> Ramdani Botz V17 adalah bot yang di ciptakan oleh Ramdani Official.
-> Jika kamu menemukan semacam bug/error, harap untuk dimaklumi sementara.
-## Language English
-> Ramdani Botz V17 is a bot created by Ramdani Official
-> If you find some kind of bug/error, please forgive me for a while
 
 ## Bugs and Tester
 * Jika kamu menemukan bug jangan lupa buka Issues
-* Info Lebih Lanjut, Chat [owner-alpha](https://wa.me/62887435047326)
+* Info Lebih Lanjut, Chat [owner-alpha](https://wa.me/6288217843188)
 
 # Requirements
 * [Node.js](https://nodejs.org/en/)
