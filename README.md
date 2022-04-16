@@ -65,12 +65,3 @@ Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was sa
 * Sekarang setelah Anda menginstal FFmpeg, verifikasi bahwa itu berhasil dengan menjalankan perintah ini untuk melihat versi:
 ```cmd
 > ffmpeg -vers)
-
-# Official Group
-- [Group 1](https://chat.whatsapp.com/Gq71DUTFOhRE9efPYyobYu)
-- [Group 2](https://chat.whatsapp.com/I4qx9yNFPXP6cGP7Q1zBhq)
-- [Group 3](https://chat.whatsapp.com/IbGdZllhP0Q92BJrOwvOLK)
-- [Group coding bersama](https://chat.whatsapp.com/FR0FmwpBEmQ3HuyF2SIdVQ)
-- [Group tes bot](https://chat.whatsapp.com/L8ucMoUQUTt3gKzSvpttbU)
-- [Group murid bot](https://chat.whatsapp.com/IyNVUbMxyoSG0Sw0oe6T62)
-- [Group saling subscribe](https://chat.whatsapp.com/Dx8VCkqvDSRD5yXXxQ3LK3)
